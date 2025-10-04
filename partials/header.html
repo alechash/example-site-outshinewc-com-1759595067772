@@ -1,0 +1,58 @@
+<header id="site-header" class="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow transition-all duration-300">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:py-2 transition-all duration-300" aria-label="Main Navigation">
+    <div class="flex items-center space-x-3">
+      <a href="/" class="flex items-center focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="OutShine Window Cleaning Home">
+        <img src="https://placehold.co/60x60?text=%C3%97" alt="OutShine Window Cleaning Logo" class="h-12 w-12 md:h-14 md:w-14 rounded bg-gray-100 object-cover mr-3" />
+        <div class="flex flex-col">
+          <span class="font-extrabold text-xl md:text-2xl tracking-tight text-gray-900 dark:text-white leading-tight">OutShine Window Cleaning</span>
+          <span class="text-xs md:text-sm text-gray-500 dark:text-gray-300">North Carolina, Texas, Ohio, Kentucky, and Indiana Window Cleaning</span>
+        </div>
+      </a>
+    </div>
+    <button id="mobile-nav-toggle" class="md:hidden ml-2 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Open menu">
+      <i class="fas fa-bars text-2xl text-gray-700 dark:text-gray-200"></i>
+    </button>
+    <ul class="hidden md:flex items-center space-x-4 lg:space-x-6 font-medium text-base">
+      <li><a href="/" class="px-2 py-1 rounded hover:bg-blue-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">Home</a></li>
+      <li><a href="/about/" class="px-2 py-1 rounded hover:bg-blue-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">About</a></li>
+      <li><a href="/products/" class="px-2 py-1 rounded hover:bg-blue-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">Menu</a></li>
+      <li><a href="/locations/" class="px-2 py-1 rounded hover:bg-blue-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">Locations</a></li>
+      <li><a href="/contact/" class="px-2 py-1 rounded hover:bg-blue-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">Contact</a></li>
+      <li><a href="/#faq" class="px-2 py-1 rounded hover:bg-blue-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">FAQ</a></li>
+    </ul>
+    <div class="flex items-center space-x-3">
+      <button id="dark-toggle" class="p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-100 dark:bg-gray-800" aria-label="Toggle dark mode">
+        <i class="fas fa-moon text-gray-700 dark:text-gray-200"></i>
+      </button>
+      <span class="ml-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-yellow-400 text-gray-900 border border-yellow-500 select-none" title="This is an example site">EXAMPLE</span>
+    </div>
+  </nav>
+  <div id="mobile-nav" class="md:hidden fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+    <div class="absolute top-0 right-0 w-64 bg-white dark:bg-gray-900 h-full shadow-lg flex flex-col">
+      <button id="mobile-nav-close" class="self-end m-4 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Close menu">
+        <i class="fas fa-times text-2xl text-gray-700 dark:text-gray-200"></i>
+      </button>
+      <ul class="flex flex-col space-y-2 px-6 mt-6 font-medium text-lg">
+        <li><a href="/" class="block px-2 py-2 rounded hover:bg-blue-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">Home</a></li>
+        <li><a href="/about/" class="block px-2 py-2 rounded hover:bg-blue-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">About</a></li>
+        <li><a href="/products/" class="block px-2 py-2 rounded hover:bg-blue-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">Menu</a></li>
+        <li><a href="/locations/" class="block px-2 py-2 rounded hover:bg-blue-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">Locations</a></li>
+        <li><a href="/contact/" class="block px-2 py-2 rounded hover:bg-blue-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">Contact</a></li>
+        <li><a href="/#faq" class="block px-2 py-2 rounded hover:bg-blue-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">FAQ</a></li>
+      </ul>
+      <div class="mt-auto mb-8 px-6">
+        <button id="mobile-dark-toggle" class="p-2 rounded bg-gray-100 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Toggle dark mode">
+          <i class="fas fa-moon text-gray-700 dark:text-gray-200"></i>
+        </button>
+        <span class="ml-2 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-yellow-400 text-gray-900 border border-yellow-500 select-none">EXAMPLE</span>
+      </div>
+    </div>
+  </div>
+  <link href="/styles.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="/script.js" defer></script>
+</header>
